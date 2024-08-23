@@ -10,7 +10,7 @@ export default [
       translationText: "Lesson 2: Listen and Answer",
     },
     img: "/public/liming.jpeg",
-    colors: ["bg-neutral-50", "text-neutral-800"],
+    colors: null,
   },
   { id: 1 },
   { id: 2 },
