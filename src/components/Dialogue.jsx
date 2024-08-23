@@ -1,5 +1,6 @@
 import React from "react"
-import DialogueText from "./DialogueComponents/DialogueText"
+import Text from "./DialogueComponents/Text"
+import Controls from "./Controls"
 
 export default function Dialogue(props) {    
     return(
@@ -14,8 +15,10 @@ export default function Dialogue(props) {
             </div>
 
             {/* Dialogue Text */}
-            <DialogueText content={props.content} />
-            
+            <Text content={props.content} />
+
+            {/* Controls Panel */}
+            <Controls content={props.content}/>
         </div>
     )
 }
