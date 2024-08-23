@@ -22,6 +22,8 @@ export default function App() {
         colors: ["bg-neutral-400", "text-neutral-800"],        
     }
     return(
-        "Hello"
+        <div className="bg-neutral-400 max-w-md mx-auto min-h-screen p-4">
+            
+        </div>
     )
 }
