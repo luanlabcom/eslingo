@@ -8,7 +8,7 @@ import Answer from "./components/Answer"
 export default function App() {
 
     return(
-        <div className="max-w-md mx-auto min-h-screen p-4">
+        <div className="flex flex-col max-w-md mx-auto min-h-screen p-4">
             <Intro content={data[0]} />
             <Narrative content={data[1]} />
             <Question content={data[2]} />
