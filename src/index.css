@@ -4,6 +4,6 @@
 
 @layer components {
   .dialogue {
-    @apply flex w-full flex-col gap-2 rounded-md bg-neutral-200 p-4 text-left;
+    @apply flex w-full flex-col gap-2 rounded-md bg-neutral-200 p-4 pb-2 text-left;
   }
 }
