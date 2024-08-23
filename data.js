@@ -12,7 +12,19 @@ export default [
     img: "/public/liming.jpeg",
     colors: null,
   },
-  { id: 1 },
+  {
+    id: 1,
+    type: "narrative",
+    speakerInfo: null,
+    timeline: [1.5, 3],
+    text: {
+      ipaText: "`Dīng dōng`| - |ménlíng |xiǎng|le",
+      targetLangText: "`叮咚`| - |门铃|响|了",
+      translationText: "`Ding Dong` - the doorbell rang",
+    },
+    img: "",
+    colors: null,
+  },
   { id: 2 },
   { id: 3 },
   {
