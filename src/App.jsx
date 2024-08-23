@@ -23,7 +23,7 @@ export default function App() {
     }
     return(
         <div className="bg-neutral-400 max-w-md mx-auto min-h-screen p-4">
-            
+            <Dialogue content={content} />
         </div>
     )
 }
