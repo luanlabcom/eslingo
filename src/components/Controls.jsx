@@ -13,7 +13,7 @@ export default function Controls(props) {
                 <button 
                     className="underline" 
                     onClick={displayTranslation}
-                >Show translation</button>
+                >Translation</button>
 
                 <button>Replay</button>
             </div>
