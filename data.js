@@ -38,7 +38,19 @@ export default [
     img: "",
     colors: null,
   },
-  { id: 3 },
+  {
+    id: 3,
+    type: "answer",
+    speakerInfo: null,
+    timeline: [5, 7],
+    text: {
+      ipaText: "Duì|, |ménlíng |xiǎng |le",
+      targetLangText: "对|,|门铃|响|了",
+      translationText: "Correct, the doorbell rang",
+    },
+    img: "",
+    colors: null,
+  },
   {
     id: 4,
     type: "dialogue",
