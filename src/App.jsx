@@ -3,6 +3,7 @@ import Intro from "./components/Intro"
 import data from "../data"
 import Narrative from "./components/Narrative"
 import Question from "./components/Question"
+import Answer from "./components/Answer"
 
 export default function App() {
 
@@ -11,6 +12,7 @@ export default function App() {
             <Intro content={data[0]} />
             <Narrative content={data[1]} />
             <Question content={data[2]} />
+            <Answer content={data[3]} />
             <Dialogue content={data[4]} />
         </div>
     )
