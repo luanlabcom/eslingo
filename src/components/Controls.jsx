@@ -8,7 +8,7 @@ export default function Controls(props) {
         translationRef.current.classList.toggle("hidden")
     }
     return (
-        <>
+        <div className="font-normal">
             <div className="flex justify-between text-xs my-4">                    
                 <button 
                     className="underline" 
@@ -21,6 +21,6 @@ export default function Controls(props) {
             <div className="hidden" ref={translationRef}>                    
                 <p className="text-blue-700">{ props.content.text.translationText }</p>
             </div>
-        </>
+        </div>
     )
 }
