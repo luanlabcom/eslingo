@@ -1,5 +1,5 @@
 import React from "react"
-import Text from "./DialogueComponents/Text"
+import Text from "./Text"
 import Controls from "./Controls"
 
 export default function Dialogue(props) {    
