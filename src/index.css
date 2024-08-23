@@ -10,4 +10,8 @@
   .narrative {
     @apply flex w-full flex-col gap-2 rounded-md bg-neutral-200 p-3 pb-2 text-left mt-4;
   }
+
+  .question {
+    @apply w-3/4 rounded-3xl rounded-tl-md p-4 pb-2 border border-red-600 text-left font-medium mt-4;
+  }
 }
