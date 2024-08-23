@@ -1,6 +1,4 @@
-import Controls from "../Controls"
-
-export default function DialogueText(props) {
+export default function Text(props) {
     const ipaTextArr = props.content.text.ipaText.split("|")
     const targetLangTextArr = props.content.text.targetLangText.split("|")    
 
@@ -13,12 +11,8 @@ export default function DialogueText(props) {
         )
     })    
     return(
-        <div>
-            <div className="flex gap-3">
-                { textElements }
-            </div>
-
-            <Controls content={props.content}/>
+        <div className="flex gap-3">
+            { textElements }
         </div>
     )
 }
