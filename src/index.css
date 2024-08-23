@@ -6,4 +6,8 @@
   .dialogue {
     @apply flex w-full flex-col gap-2 rounded-md bg-neutral-200 p-4 pb-2 text-left mt-4;
   }
+
+  .narrative {
+    @apply flex w-full flex-col gap-2 rounded-md bg-neutral-200 p-3 pb-2 text-left mt-4;
+  }
 }
