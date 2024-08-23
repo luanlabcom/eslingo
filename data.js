@@ -25,7 +25,19 @@ export default [
     img: "",
     colors: null,
   },
-  { id: 2 },
+  {
+    id: 2,
+    type: "question",
+    speakerInfo: null,
+    timeline: [3, 5],
+    text: {
+      ipaText: "Ménlíng |xiǎng |le |ma|?",
+      targetLangText: "门铃|响|了|吗|?",
+      translationText: "Did the doorbell ring?",
+    },
+    img: "",
+    colors: null,
+  },
   { id: 3 },
   {
     id: 4,
