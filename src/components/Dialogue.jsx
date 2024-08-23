@@ -2,9 +2,9 @@ import React from "react"
 import Text from "./Text"
 import Controls from "./Controls"
 
-export default function Dialogue(props) {    
+const Dialogue = React.forwardRef((props, ref) => {    
     return(
-        <div className="dialogue">
+        <div ref={ref} className="dialogue">
             {/* speaker info */}
             <div className="flex items-center gap-2">
                 <img src={ props.content.speakerInfo.avatar } alt="" className="h-12 w-12 rounded-full bg-neutral-400" />
@@ -21,4 +21,8 @@ export default function Dialogue(props) {
             <Controls content={props.content}/>
         </div>
     )
-}
+})
+
+
+
+export default Dialogue
