@@ -1,26 +1,8 @@
 import Dialogue from "./components/Dialogue"
+import data from "../data"
 
 export default function App() {
-    const content = {
-        id: 0,
-        type: "dialogue",
-        speakerInfo: {
-            avatar: "/public/liming.jpeg",
-            ipaName: "Tiánzhōng",
-            targetLangName: "田中"
-        },
-        timeline: [
-            0,
-            3.459
-        ],
-        text: {
-            ipaText: "Nǐmen |hǎo|!",
-            targetLangText: "你们|好|!",
-            translationText: "Tanaka: Hello guys!"
-        },
-        img: "",
-        colors: ["bg-neutral-400", "text-neutral-800"],        
-    }
+    const content = data
     return(
         <div className="bg-neutral-400 max-w-md mx-auto min-h-screen p-4">
             <Dialogue content={content} />
