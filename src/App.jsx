@@ -7,6 +7,8 @@ import Question from "./components/Question"
 import Answer from "./components/Answer"
 import AudioPlayer from "./components/AuidoPlayer"
 
+export const PlayAudioInRangeContext = React.createContext()
+
 export default function App() {
     const intro = data[0]
     const [contents, setContents] = React.useState([intro])
@@ -73,10 +75,19 @@ export default function App() {
         }
     }
 
+    // AudioPlayer related
+    function handleReplayAudioInRange(timeline) {
+        const [startTime, endTime] = timeline
+        audioRef.current.playbackRate = 0.75
+        audioRef.current.currentTime = startTime
+        endTimeRef.current = endTime
+        audioRef.current.play()
+    }
+
     return(
         <div className="flex flex-col gap-4 max-w-md mx-auto min-h-screen p-4"> 
-            <AudioPlayer ref={audioRef} handlePausedTime={handlePausedTime} />           
-                { elements }
+            <AudioPlayer ref={audioRef} handlePausedTime={handlePausedTime} />    
+            <PlayAudioInRangeContext.Provider value={handleReplayAudioInRange}>{ elements }</PlayAudioInRangeContext.Provider>                              
             <div className="flex justify-center mt-4">
                 {contents.length < data.length ? 
                 <button 

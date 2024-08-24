@@ -1,9 +1,12 @@
 import React from "react"
+import { PlayAudioInRangeContext } from "../App"
 
 
 export default function Controls(props) {
     const translationRef = React.useRef(null)
 
+    const handleReplayAudioInRange = React.useContext(PlayAudioInRangeContext)
+    
     function displayTranslation() {
         translationRef.current.classList.toggle("hidden")
     }
@@ -15,7 +18,7 @@ export default function Controls(props) {
                     onClick={displayTranslation}
                 >Translation</button>
 
-                <button>Replay</button>
+                <button onClick={() => handleReplayAudioInRange(props.content.timeline)}>Replay</button>
             </div>
 
             <div className="hidden" ref={translationRef}>                    
