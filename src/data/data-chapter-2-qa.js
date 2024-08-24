@@ -6,7 +6,7 @@ export default [
     timeline: [0, 3.459],
     text: {
       ipaText: "Dì|èr|kè| : |tīng |hé |huídá",
-      targetLangText: "第|二|课|: |听|和|回答",
+      targetLangText: "第|二|课。|: |听|和|回答",
       translationText: "Lesson 2: Listen and Answer",
     },
     img: {
@@ -26,7 +26,7 @@ export default [
       translationText: "“Ding dong” — The doorbell rang.",
     },
     img: {
-      src: "doorbell.png",
+      src: "doorbell.jpeg",
       alt: "doorbell",
     },
     colors: null,
@@ -228,8 +228,8 @@ export default [
     type: "dialogue",
     speakerInfo: {
       avatar: "tanaka.png",
-      ipaName: "你们|好|!",
-      targetLangName: "Tiánzhōng",
+      ipaName: "Tiánzhōng",
+      targetLangName: "田中",
     },
     timeline: [37, 39],
     text: {
