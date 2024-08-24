@@ -5,6 +5,7 @@ import data from "../data"
 import Narrative from "./components/Narrative"
 import Question from "./components/Question"
 import Answer from "./components/Answer"
+import AudioPlayer from "./components/AuidoPlayer"
 
 export default function App() {
     const intro = data[0]
@@ -72,7 +73,8 @@ export default function App() {
     }
 
     return(
-        <div className="flex flex-col gap-4 max-w-md mx-auto min-h-screen p-4">            
+        <div className="flex flex-col gap-4 max-w-md mx-auto min-h-screen p-4"> 
+            <AudioPlayer ref={audioRef} handlePausedTime={handlePausedTime} />           
                 { elements }
             <div className="flex justify-center mt-4">
                 {contents.length < data.length ? 
