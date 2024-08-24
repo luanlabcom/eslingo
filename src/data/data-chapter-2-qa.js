@@ -1,0 +1,246 @@
+export default [
+  {
+    id: 0,
+    type: "intro",
+    speakerInfo: null,
+    timeline: [0, 3.459],
+    text: {
+      ipaText: "Dì|èr|kè| : |tīng |hé |huídá",
+      targetLangText: "第|二|课|: |听|和|回答",
+      translationText: "Lesson 2: Listen and Answer",
+    },
+    img: {
+      src: "liming.jpeg",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 1,
+    type: "narrative",
+    speakerInfo: null,
+    timeline: [3.459, 6.154],
+    text: {
+      ipaText: "“Dīng dōng”| — |Ménlíng|xiǎngle|.",
+      targetLangText: "“叮咚”| — |门铃|响了|。",
+      translationText: "“Ding dong” — The doorbell rang.",
+    },
+    img: {
+      src: "doorbell.png",
+      alt: "doorbell",
+    },
+    colors: null,
+  },
+  {
+    id: 2,
+    type: "question",
+    speakerInfo: null,
+    timeline: [6.154, 8.204],
+    text: {
+      ipaText: "Ménlíng|xiǎngle|ma|?",
+      targetLangText: "门铃|响了|吗|？",
+      translationText: "Did the doorbell ring?",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 3,
+    type: "answer",
+    speakerInfo: null,
+    timeline: [8.204, 10.874],
+    text: {
+      ipaText: "Duì|,|ménlíng|xiǎngle|.",
+      targetLangText: "对|，|门铃|响了|。",
+      translationText: "Yes, the doorbell rang.",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 4,
+    type: "question",
+    speakerInfo: null,
+    timeline: [10.874, 14.350999999999999],
+    text: {
+      ipaText: "Ménlíng|xiǎngle|háishì|diànhuà|xiǎngle|?",
+      targetLangText: "门铃|响了|还是|电话|响了|？",
+      translationText: "Did the doorbell ring or did the telephone ring?",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 5,
+    type: "answer",
+    speakerInfo: null,
+    timeline: [14.350999999999999, 16.21],
+    text: {
+      ipaText: "Ménlíng|xiǎngle|.",
+      targetLangText: "门铃|响了|。",
+      translationText: "The doorbell rang.",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 6,
+    type: "question",
+    speakerInfo: null,
+    timeline: [16.21, 18.238],
+    text: {
+      ipaText: "Shénme|xiǎngle|?",
+      targetLangText: "什么|响了|？",
+      translationText: "What rang?",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 7,
+    type: "answer",
+    speakerInfo: null,
+    timeline: [18.238, 20.249],
+    text: {
+      ipaText: "Ménlíng|xiǎngle|.",
+      targetLangText: "门铃|响了|。",
+      translationText: "The doorbell rang.",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 8,
+    type: "question",
+    speakerInfo: null,
+    timeline: [20.249, 22.299],
+    text: {
+      ipaText: "Ménlíng|huàile|ma|?",
+      targetLangText: "门铃|坏了|吗|？",
+      translationText: "Was the doorbell broken?",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 9,
+    type: "answer",
+    speakerInfo: null,
+    timeline: [22.299, 27.043],
+    text: {
+      ipaText: "Bù|,|ménlíng|méi|huài|.|Ménlíng|xiǎngle|!",
+      targetLangText: "不|，|门铃|没|坏|。|门铃|响了|！",
+      translationText: "No, the doorbell wasn’t broken. The doorbell rang!",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 10,
+    type: "question",
+    speakerInfo: null,
+    timeline: [27.043, 29.083],
+    text: {
+      ipaText: "Shéi|ànle|ménlíng|?",
+      targetLangText: "谁|按了|门铃|？",
+      translationText: "Who rang the doorbell?",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 11,
+    type: "answer",
+    speakerInfo: null,
+    timeline: [29.083, 31.3],
+    text: {
+      ipaText: "Shì|Tián Zhōng|àn|de|.",
+      targetLangText: "是|田中|按|的|。",
+      translationText: "It was Tanaka who rang the doorbell.",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 12,
+    type: "question",
+    speakerInfo: null,
+    timeline: [31.3, 33.923],
+    text: {
+      ipaText: "Ménlíng|wèishéme|xiǎngle|?",
+      targetLangText: "门铃|为什么|响了|？",
+      translationText: "Why did the doorbell ring?",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 13,
+    type: "answer",
+    speakerInfo: null,
+    timeline: [33.923, 36.696],
+    text: {
+      ipaText: "Yīnwèi|Tián Zhōng|ànle|ménlíng|.",
+      targetLangText: "因为|田中|按了|门铃|。",
+      translationText: "Because Tanaka rang the doorbell.",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: null,
+  },
+  {
+    id: 14,
+    type: "dialogue",
+    speakerInfo: {
+      avatar: "tanaka.png",
+      ipaName: "你们|好|!",
+      targetLangName: "Tiánzhōng",
+    },
+    timeline: [37, 39],
+    text: {
+      ipaText: "Nǐmen |hǎo|!",
+      targetLangText: "你们|好|!",
+      translationText: "Tanaka: Hello guys!",
+    },
+    img: {
+      src: "",
+      alt: "",
+    },
+    colors: ["bg-neutral-100", "text-neutral-800"],
+  },
+];
