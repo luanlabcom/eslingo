@@ -1,15 +1,17 @@
 import React from "react"
 import Dialogue from "./components/Dialogue"
 import Intro from "./components/Intro"
-import data from "../data"
+// import data from "../data"
 import Narrative from "./components/Narrative"
 import Question from "./components/Question"
 import Answer from "./components/Answer"
 import AudioPlayer from "./components/AuidoPlayer"
+import chapter2Data from "../data-chapter-2-qa"
 
 export const PlayAudioInRangeContext = React.createContext()
 
 export default function App() {
+    const data = chapter2Data
     const intro = data[0]
     const [contents, setContents] = React.useState([intro])
 
