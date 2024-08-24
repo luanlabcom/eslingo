@@ -3,7 +3,7 @@ export default [
     id: 0,
     type: "intro",
     speakerInfo: null,
-    timeline: [0, 1.5],
+    timeline: [0, 3.45],
     text: {
       ipaText: "Dì|èr|kè|: |tīng |hé |huídá",
       targetLangText: "第|二|课|: |听|和|回答",
@@ -16,7 +16,7 @@ export default [
     id: 1,
     type: "narrative",
     speakerInfo: null,
-    timeline: [1.5, 3],
+    timeline: [3.459, 6.154],
     text: {
       ipaText: "`Dīng dōng`| - |ménlíng |xiǎng|le",
       targetLangText: "`叮咚`| - |门铃|响|了",
@@ -29,7 +29,7 @@ export default [
     id: 2,
     type: "question",
     speakerInfo: null,
-    timeline: [3, 5],
+    timeline: [6.154, 8.204],
     text: {
       ipaText: "Ménlíng |xiǎng |le |ma|?",
       targetLangText: "门铃|响|了|吗|?",
@@ -42,7 +42,7 @@ export default [
     id: 3,
     type: "answer",
     speakerInfo: null,
-    timeline: [5, 7],
+    timeline: [8.204, 10.874],
     text: {
       ipaText: "Duì|, |ménlíng |xiǎng |le",
       targetLangText: "对|,|门铃|响|了",
@@ -59,7 +59,7 @@ export default [
       ipaName: "Tiánzhōng",
       targetLangName: "田中",
     },
-    timeline: [0, 3.459],
+    timeline: [10.874, 14.350999999999999],
     text: {
       ipaText: "Nǐmen |hǎo|!",
       targetLangText: "你们|好|!",
