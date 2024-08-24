@@ -9,10 +9,13 @@ import Answer from "./components/Answer"
 export default function App() {
     const intro = data[0]
     const [contents, setContents] = React.useState([intro])
+
     // Ref for the last element
     const endOfElementsRef = React.useRef(null)
 
-    // console.log(endOfElementsRef.current)
+    // AudioPlayer related
+    const audioRef = React.useRef(null)
+    const endTimeRef = React.useRef(0)
 
     React.useEffect(() => {
         if (endOfElementsRef.current) {
@@ -47,13 +50,29 @@ export default function App() {
     function addNewContent() {
         if (contents.length < data.length) {
             setContents(prev => [...prev, data[prev.length]])
+            playAudioInRange()
         } else {
             console.log("done")
+        }
+    }    
+    
+    // AudioPlayer related
+    function playAudioInRange() {
+        const [startTime, endTime] = contents[contents.length - 1].timeline
+        audioRef.current.currentTime = startTime
+        endTimeRef.current = endTime
+        audioRef.current.play()
+    }
+
+    // AudioPlayer related
+    function handlePausedTime() {
+        if (audioRef.current.currentTime >= endTimeRef.current) {
+            audioRef.current.pause()
         }
     }
 
     return(
-        <div className="flex flex-col gap-4 max-w-md mx-auto min-h-screen p-4">
+        <div className="flex flex-col gap-4 max-w-md mx-auto min-h-screen p-4">            
                 { elements }
             <div className="flex justify-center mt-4">
                 {contents.length < data.length ? 
@@ -62,7 +81,7 @@ export default function App() {
                     onClick={addNewContent}>Continue</button>
                 :
                 <p className="bg-green-600 w-full text-center p-2 font-semibold text-sm text-neutral-950 rounded-sm ">🎊 You've Finished The Lesson 🎊</p>
-                }
+                }            
             </div>
         </div>
     )
