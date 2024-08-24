@@ -59,7 +59,7 @@ export default function App() {
     
     // AudioPlayer related
     function playAudioInRange() {
-        const [startTime, endTime] = contents[contents.length - 1].timeline
+        const [startTime, endTime] = data[contents.length].timeline
         audioRef.current.currentTime = startTime
         endTimeRef.current = endTime
         audioRef.current.play()
