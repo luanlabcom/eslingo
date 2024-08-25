@@ -6,12 +6,12 @@ import Image from "./Image"
 const Dialogue = React.forwardRef((props, ref) => {    
     const [bgColor, textColor] = props.content.colors
     const customClassName = `dialogue ${bgColor} ${textColor}`
-    console.log(customClassName)
+    
     return(
         <div ref={ref} className={customClassName}>
             {/* speaker info */}
             <div className="flex items-center gap-2">
-                <img src={ props.content.speakerInfo.avatar } alt="" className="h-12 w-12 rounded-full bg-neutral-400" />
+                <img src={ "/assets/images/" + props.content.speakerInfo.avatar } alt="" className="h-12 w-12 rounded-full bg-neutral-400" />
                 <div className="speaker-name flex flex-col gap-1 text-xs font-semibold">
                     <span>{ props.content.speakerInfo.targetLangName }</span>
                     <span>{ props.content.speakerInfo.ipaName }</span>
