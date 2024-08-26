@@ -7,6 +7,11 @@ import Answer from "./components/Answer"
 import AudioPlayer from "./components/AuidoPlayer"
 import chapter2Data from "./data/data-chapter-2-qa"
 
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
+import Dashboard from "./components/Dashboard"
+import Study from "./pages/Study"
+import Practice from "./pages/Practice"
+
 export const PlayAudioInRangeContext = React.createContext()
 
 export default function App() {
@@ -85,19 +90,31 @@ export default function App() {
         audioRef.current.play()
     }
 
-    return(
-        <div className="flex flex-col gap-4 max-w-md mx-auto min-h-screen p-4"> 
-            <AudioPlayer ref={audioRef} handlePausedTime={handlePausedTime} />    
-            <PlayAudioInRangeContext.Provider value={handleReplayAudioInRange}>{ elements }</PlayAudioInRangeContext.Provider>                              
-            <div className="flex justify-center mt-4">
-                {contents.length < data.length ? 
-                <button 
-                    className="rounded-full bg-neutral-950 px-12 py-2 font-semibold text-neutral-50" 
-                    onClick={addNewContent}>Continue</button>
-                :
-                <p className="bg-green-600 w-full text-center p-2 font-semibold text-sm text-neutral-950 rounded-sm ">🎊 You've Finished The Lesson 🎊</p>
-                }            
-            </div>
+    {/* 
+    <div className="flex flex-col gap-4 max-w-md mx-auto min-h-screen p-4"> 
+        <AudioPlayer ref={audioRef} handlePausedTime={handlePausedTime} />    
+        <PlayAudioInRangeContext.Provider value={handleReplayAudioInRange}>{ elements }</PlayAudioInRangeContext.Provider>                              
+        <div className="flex justify-center mt-4">
+            {contents.length < data.length ? 
+            <button 
+                className="rounded-full bg-neutral-950 px-12 py-2 font-semibold text-neutral-50" 
+                onClick={addNewContent}>Continue</button>
+            :
+            <p className="bg-green-600 w-full text-center p-2 font-semibold text-sm text-neutral-950 rounded-sm ">🎊 You've Finished The Lesson 🎊</p>
+            }            
         </div>
+    </div>            
+    */}
+
+    return(        
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Dashboard />}>
+                    <Route index element={<Study />} />
+                    <Route path="/practice" element={<Practice />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     )
 }
+
